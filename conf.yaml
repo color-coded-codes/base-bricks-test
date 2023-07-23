@@ -1,0 +1,67 @@
+interpreter_version: v1.0
+category: basic operations
+bricks:
+  - name: add_two_numbers
+    type: function
+    file: basic_operations.py
+    version: 1.0.0
+    output_prefix: added
+    inputs:
+      - a:
+          type:
+            - int
+            - float
+      - b:
+          type:
+            - int
+            - float
+    outputs:
+      - result:
+          type: float
+  - name: safe_divide
+    type: function
+    file: basic_operations.py
+    version: 0.2.0
+    output_prefix: divided
+    inputs:
+      - a:
+          type:
+            - int
+            - float
+      - b:
+          type:
+            - int
+            - float
+    outputs:
+      - result:
+          type: float
+  - name: modulo
+    type: function
+    file: basic_operations.py
+    version: 2.2.0
+    inputs:
+      - a:
+          type:
+            - int
+            - float
+      - b:
+          type:
+            - int
+            - float
+    outputs:
+      - result:
+          type: float
+  - name: list_to_vector
+    type: function
+    file: matrix_and_vectors.py
+    category: matrix and vector operations
+    requirements:
+      - numpy
+    prefix: array
+    inputs:
+      - numbers:
+          type: list
+          type_meta: float
+    outputs:
+      - list:
+          type: ndarray
