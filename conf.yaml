@@ -1,9 +1,10 @@
 interpreter_version: v1.0
-category: basic operations
 bricks:
   - name: add_two_numbers
     type: function
+    status: dev
     file_path: basic_operations.py
+    category: basic operations
     version: 1.0.0
     output_prefix: added
     inputs:
@@ -21,6 +22,7 @@ bricks:
   - name: safe_divide
     type: function
     file_path: basic_operations.py
+    category: basic operations
     version: 0.2.0
     output_prefix: divided
     inputs:
@@ -38,6 +40,7 @@ bricks:
   - name: modulo
     type: function
     file_path: basic_operations.py
+    category: basic operations
     version: 2.2.0
     inputs:
       - a:
@@ -63,4 +66,4 @@ bricks:
           type_meta: float
     outputs:
       - list:
-          type: ndarray
+          type: np.ndarray
