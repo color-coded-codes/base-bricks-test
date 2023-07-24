@@ -56,7 +56,7 @@ bricks:
           type: float
   - name: list_to_vector
     type: function
-    file_path: matrix_and_vectors.py
+    file_path: matrix/matrix_and_vectors.py
     requirements:
       - numpy
     prefix: array
