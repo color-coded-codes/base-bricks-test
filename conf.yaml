@@ -3,6 +3,10 @@ bricks:
   - name: add_two_numbers
     type: function
     status: dev
+    python_compatibility:
+      - 3.10
+      - 3.9
+      - 3.8
     file_path: basic_operations.py
     category: basic operations
     version: 1.0.0
