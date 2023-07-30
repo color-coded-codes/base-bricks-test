@@ -12,17 +12,17 @@ bricks:
     version: 1.0.0
     output_prefix: added
     inputs:
-      - a:
-          type:
-            - int
-            - float
-      - b:
-          type:
-            - int
-            - float
+      a:
+        type:
+          - int
+          - float
+      b:
+        type:
+          - int
+          - float
     outputs:
-      - result:
-          type: float
+      result:
+        type: float
   - name: safe_divide
     type: function
     file_path: basic_operations.py
@@ -30,34 +30,34 @@ bricks:
     version: 0.2.0
     output_prefix: divided
     inputs:
-      - a:
-          type:
-            - int
-            - float
-      - b:
-          type:
-            - int
-            - float
+      a:
+        type:
+          - int
+          - float
+      b:
+        type:
+          - int
+          - float
     outputs:
-      - result:
-          type: float
+      result:
+        type: float
   - name: modulo
     type: function
     file_path: basic_operations.py
     category: basic operations
     version: 2.2.0
     inputs:
-      - a:
-          type:
-            - int
-            - float
-      - b:
-          type:
-            - int
-            - float
+      a:
+        type:
+          - int
+          - float
+      b:
+        type:
+          - int
+          - float
     outputs:
-      - result:
-          type: float
+      result:
+        type: float
   - name: list_to_vector
     type: function
     file_path: matrix/matrix_and_vectors.py
@@ -65,9 +65,9 @@ bricks:
       - numpy
     prefix: array
     inputs:
-      - numbers:
-          type: list
-          type_meta: float
+      numbers:
+        type: list
+        type_meta: float
     outputs:
-      - list:
-          type: np.ndarray
+      list:
+        type: np.ndarray
