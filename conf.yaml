@@ -3,6 +3,7 @@ bricks:
   - name: add_two_numbers
     type: function
     status: dev
+    icon: plus
     python_compatibility:
       - '3.10'
       - '3.9'
@@ -25,6 +26,7 @@ bricks:
         type: float
   - name: safe_divide
     type: function
+    icon: divide
     file_path: basic_operations.py
     category: basic operations
     version: 0.2.0
@@ -43,6 +45,7 @@ bricks:
         type: float
   - name: modulo
     type: function
+    icon: square-root-variable
     file_path: basic_operations.py
     category: basic operations
     version: 2.2.0
@@ -60,6 +63,7 @@ bricks:
         type: float
   - name: list_to_vector
     type: function
+    icon: bezier-curve
     file_path: matrix/matrix_and_vectors.py
     requirements:
       - numpy
