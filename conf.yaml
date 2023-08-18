@@ -1,6 +1,7 @@
 interpreter_version: v1.0
 bricks:
   - name: add_two_numbers
+    display_name: 'Add 2 NUMBERS'
     type: function
     status: dev
     icon: plus
