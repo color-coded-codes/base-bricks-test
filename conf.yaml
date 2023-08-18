@@ -2,6 +2,7 @@ interpreter_version: v1.0
 bricks:
   - name: add_two_numbers
     display_name: 'Add 2 NUMBERS'
+    description: Receives two numeric inputs and returns their sum, allowing for arithmetic calculations.
     type: function
     status: dev
     icon: plus
@@ -26,6 +27,7 @@ bricks:
       result:
         type: float
   - name: safe_divide
+    description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
     type: function
     icon: divide
     file_path: basic_operations.py
@@ -45,6 +47,7 @@ bricks:
       result:
         type: float
   - name: modulo
+    description: Takes two numbers as input, divides the first by the second, and returns the remainder.
     type: function
     icon: square-root-variable
     file_path: basic_operations.py
@@ -63,6 +66,7 @@ bricks:
       result:
         type: float
   - name: list_to_vector
+    description: Accepts a list of numerical values and transforms it into a mathematical vector object.
     type: function
     icon: bezier-curve
     file_path: matrix/matrix_and_vectors.py
