@@ -55,6 +55,25 @@ def add_two_numbers(a, b):
     Term 2
     : Definition 2
 
+
+    content in paragraph with footnote[^1] markup.
+
+    [^1]: footnote explain
+
+    The HTML specification
+    is maintained by the W3C.
+
+    *[HTML]: Hyper Text Markup Language
+    *[W3C]: World Wide Web Consortium
+
+    Hello~subscript~
+    CH~3~CH~2~OH
+
+    here for testing Math:
+    function $f$
+    $$
+    \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+    $$
     """
     error_message = None
     result = None
