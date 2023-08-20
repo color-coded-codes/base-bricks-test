@@ -1,15 +1,16 @@
 def add_two_numbers(a, b):
-    """Add two numbers.
+    """
+    # Add two numbers
 
     This function attempts to add two numbers provided as input. If the inputs
     are not valid numbers, it raises a ValueError with a relevant error message.
 
-    Args:
-        a: First input value.
-        b: Second input value.
+    ## Args:
+    - **a**: First input value.
+    - **b**: Second input value.
 
-    Returns:
-        Sum of the two input values.
+    ## Returns:
+    Sum of the two input values.
     """
     error_message = None
     result = None
