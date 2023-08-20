@@ -71,9 +71,11 @@ def add_two_numbers(a, b):
 
     here for testing Math:
     function $f$
+
     $$
-    \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+    c = \pm\sqrt{a^2 + b^2}
     $$
+    
     """
     error_message = None
     result = None
