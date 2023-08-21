@@ -2,7 +2,83 @@ interpreter_version: v1.0
 bricks:
   - name: add_two_numbers
     display_name: 'Add 2 NUMBERS'
-    description: Receives two numeric inputs and returns their sum, allowing for arithmetic calculations.
+    short_description: Receives two numeric inputs and returns their sum, allowing for arithmetic calculations.
+    description: |
+      ![Alt text](https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80)
+      # Heading 1
+      ## Heading 2
+      ### Heading 3
+      #### Heading 4
+      ##### Heading 5
+      ###### Heading 6
+
+      Lorem **ipsum dolor** sit amet, [Google](https://www.google.com) consectetur adipiscing elit. Curabitur rhoncus, justo eget volutpat semper, erat sapien mollis elit, eget congue est augue et metus. Proin sit amet libero id eros vestibulum consequat. Vivamus posuere, elit vitae interdum sollicitudin, risus justo egestas velit, vitae dapibus odio orci vitae nunc.
+
+      **Fusce sed enim volutpat**, Lorem *ipsum dolor sit amet*, consectetur adipiscing elit. Curabitur rhoncus, justo eget volutpat semper, erat sapien mollis elit, eget congue est augue et metus. Proin sit amet libero id eros vestibulum consequat. Vivamus posuere, elit vitae interdum sollicitudin, risus justo egestas velit, vitae dapibus odio orci vitae nunc. Fusce sed enim volutpat.
+
+      Fusce sed enim volutpat:
+      - Item 1
+      - Item 2
+
+      ---
+      Fusce sed enim volutpat:
+      1. First item
+      2. Second item
+
+      > This is a blockquote
+
+      `requirements==1.2`
+
+      And a code blpck here:
+
+      ```
+      from django.conf import settings
+
+      for x in y:
+          print(x)
+
+
+      ```
+      ---
+
+      For each thing there is a ~~strikethrough~~ to show!
+
+      | Header 1 | Header 2 |
+      |----------|----------|
+      | Cell 1   | Cell 2   |
+      | Cell 3   | Cell 4   |
+
+      - [x] Task 1 (completed)
+      - [ ] Task 2 (not completed)
+
+      is this emoji working?? :smile:
+
+      Term 1
+      : Definition 1
+
+      Term 2
+      : Definition 2
+
+
+      content in paragraph with footnote[^1] markup.
+
+      [^1]: footnote explain
+
+      The HTML specification
+      is maintained by the W3C.
+
+      *[HTML]: Hyper Text Markup Language
+      *[W3C]: World Wide Web Consortium
+
+      Hello~subscript~
+      CH~3~CH~2~OH
+
+      here for testing Math:
+      function $f$
+
+      $$
+      c = \pm\sqrt{a^2 + b^2}
+      $$
     type: function
     status: dev
     icon: plus
@@ -27,7 +103,7 @@ bricks:
       result:
         type: float
   - name: safe_divide
-    description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
+    short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
     type: function
     icon: divide
     file_path: basic_operations.py
@@ -47,7 +123,7 @@ bricks:
       result:
         type: float
   - name: modulo
-    description: Takes two numbers as input, divides the first by the second, and returns the remainder.
+    short_description: Takes two numbers as input, divides the first by the second, and returns the remainder.
     type: function
     icon: square-root-variable
     file_path: basic_operations.py
@@ -66,7 +142,7 @@ bricks:
       result:
         type: float
   - name: list_to_vector
-    description: Accepts a list of numerical values and transforms it into a mathematical vector object.
+    short_description: Accepts a list of numerical values and transforms it into a mathematical vector object.
     type: function
     icon: bezier-curve
     file_path: matrix/matrix_and_vectors.py
