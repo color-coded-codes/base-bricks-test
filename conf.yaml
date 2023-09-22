@@ -92,13 +92,9 @@ bricks:
     output_prefix: added
     inputs:
       a:
-        type:
-          - int
-          - float
+        type: number
       b:
-        type:
-          - int
-          - float
+        type: number
     outputs:
       result:
         type: float
@@ -112,13 +108,9 @@ bricks:
     output_prefix: divided
     inputs:
       a:
-        type:
-          - int
-          - float
+        type: float
       b:
-        type:
-          - int
-          - float
+        type: float
     outputs:
       result:
         type: float
@@ -131,13 +123,9 @@ bricks:
     version: 2.2.0
     inputs:
       a:
-        type:
-          - int
-          - float
+        type: number
       b:
-        type:
-          - int
-          - float
+        type: float
     outputs:
       result:
         type: float
@@ -155,4 +143,4 @@ bricks:
         type_meta: float
     outputs:
       list:
-        type: np.ndarray
+        type: numpytensor
