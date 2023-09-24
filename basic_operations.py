@@ -1,4 +1,4 @@
-def add_two_numbers(a, b):
+def add_two_numbers(a, b, options):
     error_message = None
     result = None
 
