@@ -98,6 +98,31 @@ bricks:
     outputs:
       result:
         type: float
+    options:
+      - name: Has Value
+        type: toggle
+        default: false
+      - name: Learning Rate
+        type: number
+        step: .1
+        max: 5
+        min: -5
+        default: 0
+      - name: Algorithm
+        type: select
+        choices:
+          - algo1
+          - advanced algorithm
+          - another algo
+        default: another algo
+      - name: Project Name
+        type: text
+        default: this is default text
+        max_characters: 50
+      - name: Prompt
+        type: textarea
+        default: this is default text a bit more extensive than others
+        max_characters: 1000
   - name: safe_divide
     short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
     type: function
