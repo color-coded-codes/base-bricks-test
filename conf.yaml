@@ -99,10 +99,10 @@ bricks:
       result:
         type: float
     options:
-      - name: Has Value
+      - name: Has_Value
         type: toggle
         default: false
-      - name: Learning Rate
+      - name: Learning_Rate
         type: number
         step: .1
         max: 5
@@ -115,7 +115,7 @@ bricks:
           - advanced algorithm
           - another algo
         default: another algo
-      - name: Project Name
+      - name: Project_Name
         type: text
         default: this is default text
         max_characters: 50
@@ -165,7 +165,6 @@ bricks:
     inputs:
       numbers:
         type: list
-        type_meta: float
     outputs:
       list:
         type: numpytensor
