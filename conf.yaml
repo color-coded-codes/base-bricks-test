@@ -116,7 +116,7 @@ bricks:
           - another algo
         default: another algo
       - name: Project_Name
-        type: text
+        type: input
         default: this is default text
         max_characters: 50
       - name: Prompt
