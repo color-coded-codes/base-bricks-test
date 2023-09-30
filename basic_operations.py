@@ -41,7 +41,7 @@ def safe_divide(a, b):
     return result
 
 
-def modulo(a, b):
+def modulo(a=1, b=3):
     result = None
     try:
         # Convert to int if the input is a string representation of a number
