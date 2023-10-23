@@ -168,3 +168,21 @@ bricks:
     outputs:
       list:
         type: numpytensor
+  - name: text_entry
+    display_name: 'Text'
+    type: entry
+    entry_type: text
+    category: entries
+    outputs:
+      text_entry:
+        type:
+          - str
+  - name: textarea_entry
+    display_name: 'Multiline Text'
+    type: entry
+    entry_type: textarea
+    category: entries
+    outputs:
+      textarea_entry:
+        type:
+          - str
