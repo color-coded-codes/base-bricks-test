@@ -170,18 +170,24 @@ bricks:
         type: numpytensor
   - name: text_entry
     display_name: 'Text'
+    short_description: Textual input not exceeding 4096 characters.
     type: entry
+    icon: keyboard
     entry_type: text
     category: entries
+    version: 1.2.0
     outputs:
       text_entry:
         type:
           - str
   - name: textarea_entry
     display_name: 'Multiline Text'
+    short_description: Multiline textual input that you can use as a manual entry.
     type: entry
+    icon: keyboard
     entry_type: textarea
     category: entries
+    version: 1.0.0
     outputs:
       textarea_entry:
         type:
