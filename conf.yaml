@@ -178,8 +178,7 @@ bricks:
     version: 1.2.0
     outputs:
       text_entry:
-        type:
-          - str
+        type: str
   - name: textarea_entry
     display_name: 'Multiline Text'
     short_description: Multiline textual input that you can use as a manual entry.
@@ -190,5 +189,4 @@ bricks:
     version: 1.0.0
     outputs:
       textarea_entry:
-        type:
-          - str
+        type: str
