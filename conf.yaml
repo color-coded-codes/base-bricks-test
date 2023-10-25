@@ -209,6 +209,7 @@ bricks:
     type: graph
     icon: chart-simple
     file_path: graphs-specs/bar-chart.json
+    category: graphs
     inputs:
       data:
         type: 2d_graph
@@ -221,6 +222,7 @@ bricks:
     type: graph
     icon: chart-pie
     file_path: graphs-specs/pie-chart.json
+    category: graphs
     inputs:
       data:
         type: 2d_graph
