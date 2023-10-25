@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "PLACEHOLDER_X",
+      "type": "ordinal",
+      "axis": { "title": "TITLE_X" }
+    },
+    "y": {
+      "field": "PLACEHOLDER_Y",
+      "type": "quantitative",
+      "axis": { "title": "TITLE_Y" }
+    }
+  }
+}

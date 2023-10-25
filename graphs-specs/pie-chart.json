@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple responsive pie chart with a custom legend",
+  "mark": { "type": "arc", "outerRadius": 80 },
+  "encoding": {
+    "theta": { "field": "PLACEHOLDER_Y", "type": "quantitative" },
+    "color": {
+      "field": "PLACEHOLDER_X",
+      "type": "nominal",
+      "legend": {
+        "title": "TITLE_X",
+        "orient": "top-right",
+        "padding": 5,
+        "strokeColor": "gray",
+        "titleFontSize": 16,
+        "titleFontWeight": "bold",
+        "labelFontSize": 12
+      }
+    }
+  },
+  "view": { "stroke": null },
+  "width": "container",
+  "height": "container"
+}
