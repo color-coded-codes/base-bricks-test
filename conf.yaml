@@ -205,7 +205,7 @@ bricks:
         type: str
   - name: bar_chart
     display_name: 'Bar Chart'
-    short_description: A bar chart visualizes data using rectangular bars, with bar lengths proportional to the data values.
+    short_description: A bar chart visualizes data using rectangular bars, with lengths proportional to the data values.
     type: graph
     icon: chart-simple
     file_path: graphs-specs/bar-chart.json
@@ -217,7 +217,7 @@ bricks:
         type: 2d_graph
   - name: pie_chart
     display_name: 'Pie Chart'
-    short_description: A bar chart visualizes data using rectangular bars, with bar lengths proportional to the data values.
+    short_description: A pie chart visualizes data using proportions.
     type: graph
     icon: chart-pie
     file_path: graphs-specs/pie-chart.json
