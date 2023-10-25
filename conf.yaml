@@ -154,6 +154,19 @@ bricks:
     outputs:
       result:
         type: float
+  - name: str2int
+    short_description: Takes text and convert it to integer.
+    type: function
+    icon: font
+    file_path: basic_operations.py
+    category: basic operations
+    version: 1.2.0
+    inputs:
+      text:
+        type: str
+    outputs:
+      integer_number:
+        type: int
   - name: list_to_vector
     short_description: Accepts a list of numerical values and transforms it into a mathematical vector object.
     type: function

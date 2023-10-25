@@ -61,3 +61,12 @@ def modulo(a=1, b=3):
         raise TypeError("Both inputs must be integers or string representations of integers.")
     
     return result
+
+
+def str2int(text):
+    try:
+        integer_number = int(text)
+    except ValueError:
+        integer_number = 0
+    
+    return integer_number
