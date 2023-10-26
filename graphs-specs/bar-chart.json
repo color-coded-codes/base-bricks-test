@@ -4,14 +4,12 @@
   "mark": "bar",
   "encoding": {
     "x": {
-      "field": "PLACEHOLDER_X",
-      "type": "ordinal",
-      "axis": { "title": "TITLE_X" }
+      "field": "x",
+      "type": "ordinal"
     },
     "y": {
-      "field": "PLACEHOLDER_Y",
-      "type": "quantitative",
-      "axis": { "title": "TITLE_Y" }
+      "field": "y",
+      "type": "quantitative"
     }
   }
 }

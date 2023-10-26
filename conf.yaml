@@ -208,7 +208,6 @@ bricks:
     short_description: A bar chart visualizes data using rectangular bars, with lengths proportional to the data values.
     type: graph
     icon: chart-simple
-    file_path: graphs-specs/bar-chart.json
     category: graphs
     inputs:
       data:
@@ -218,7 +217,6 @@ bricks:
     short_description: A pie chart visualizes data using proportions.
     type: graph
     icon: chart-pie
-    file_path: graphs-specs/pie-chart.json
     category: graphs
     inputs:
       data:
