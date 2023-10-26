@@ -213,9 +213,6 @@ bricks:
     inputs:
       data:
         type: 2d_graph
-    outputs:
-      data:
-        type: 2d_graph
   - name: pie_chart
     display_name: 'Pie Chart'
     short_description: A pie chart visualizes data using proportions.
@@ -224,8 +221,5 @@ bricks:
     file_path: graphs-specs/pie-chart.json
     category: graphs
     inputs:
-      data:
-        type: 2d_graph
-    outputs:
       data:
         type: 2d_graph
