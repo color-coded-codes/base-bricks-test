@@ -210,14 +210,8 @@ bricks:
     icon: chart-simple
     category: graphs
     inputs:
-      data:
-        type: 2d_graph
-  - name: pie_chart
-    display_name: 'Pie Chart'
-    short_description: A pie chart visualizes data using proportions.
-    type: graph
-    icon: chart-pie
-    category: graphs
-    inputs:
-      data:
-        type: 2d_graph
+      x:
+        type: number[]
+      y:
+        type: any[]
+
