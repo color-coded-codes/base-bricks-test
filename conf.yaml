@@ -214,4 +214,5 @@ bricks:
         type: number[]
       y:
         type: any[]
-
+    optional_inputs:
+      y: []
