@@ -70,3 +70,8 @@ def str2int(text):
         integer_number = 0
     
     return integer_number
+
+
+def generate_random_numbers():
+    import random
+    return [random.randint(1, 100) for _ in range(100)]
