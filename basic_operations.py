@@ -74,4 +74,5 @@ def str2int(text):
 
 def generate_random_numbers():
     import random
-    return [random.randint(1, 100) for _ in range(100)]
+    random_array = [random.randint(1, 100) for _ in range(100)]
+    return random_array
