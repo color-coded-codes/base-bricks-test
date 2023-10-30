@@ -210,10 +210,10 @@ bricks:
     icon: chart-simple
     category: graphs
     inputs:
-      x:
-        type: any[]
       y:
         type: number[]
+      x:
+        type: any[]
     optional_inputs:
       x: []
   - name: generate_random_numbers
