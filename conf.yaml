@@ -234,7 +234,7 @@ bricks:
     category: basic operations
     version: 1.1.1
     inputs:
-      list:
+      numbers:
         type: number[]
     outputs:
       random_list:
