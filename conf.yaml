@@ -226,3 +226,16 @@ bricks:
     outputs:
       random_list:
         type: number[]
+  - name: compute_mean
+    short_description: computing the mean of a list of number.
+    type: function
+    icon: calculator
+    file_path: basic_operations.py
+    category: basic operations
+    version: 1.1.1
+    inputs:
+      list:
+        type: number[]
+    outputs:
+      random_list:
+        type: float

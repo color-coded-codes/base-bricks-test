@@ -76,3 +76,11 @@ def generate_random_numbers():
     import random
     random_array = [random.randint(1, 100) for _ in range(100)]
     return random_array
+
+
+def compute_mean(numbers):
+    if len(numbers) == 0:
+        result = 0
+    else:
+        result = sum(numbers) / len(numbers)
+    return result
