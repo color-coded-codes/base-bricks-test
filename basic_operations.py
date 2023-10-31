@@ -84,3 +84,7 @@ def compute_mean(numbers):
     else:
         result = sum(numbers) / len(numbers)
     return result
+
+def number_of_characters(text):
+    result = len(text)
+    return result

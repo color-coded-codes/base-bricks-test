@@ -261,3 +261,16 @@ bricks:
     outputs:
       random_list:
         type: float
+  - name: number_of_characters
+    short_description: Compute the number of characters in a text.
+    type: function
+    icon: font
+    file_path: basic_operations.py
+    category: text processing
+    version: 7.2.0
+    inputs:
+      text:
+        type: str
+    outputs:
+      count:
+        type: int
