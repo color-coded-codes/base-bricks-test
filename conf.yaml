@@ -274,3 +274,12 @@ bricks:
     outputs:
       count:
         type: int
+  - name: table_chart
+    display_name: 'Table'
+    short_description: A table representing data.
+    type: graph
+    icon: table
+    category: graphs
+    inputs:
+      data:
+        type: keypairlist
