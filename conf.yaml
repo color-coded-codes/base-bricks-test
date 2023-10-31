@@ -203,6 +203,28 @@ bricks:
     outputs:
       textarea_entry:
         type: str
+  - name: folder_entry
+    display_name: 'Folder Selection'
+    short_description: Folder selection on your own machine.
+    type: entry
+    icon: folder-open
+    entry_type: folder
+    category: entries
+    version: 1.0.0
+    outputs:
+      folder_entry:
+        type: str
+  - name: file_entry
+    display_name: 'File Selection'
+    short_description: File selection on your own machine.
+    type: entry
+    icon: file
+    entry_type: file
+    category: entries
+    version: 1.0.0
+    outputs:
+      file_entry:
+        type: str
   - name: bar_chart
     display_name: 'Bar Chart'
     short_description: A bar chart visualizes data using rectangular bars, with lengths proportional to the data values.
