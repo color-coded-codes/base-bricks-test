@@ -88,3 +88,29 @@ def compute_mean(numbers):
 def number_of_characters(text):
     result = len(text)
     return result
+
+
+def generate_fake_dicts(num_dicts=10):
+    import random
+    import string
+    def random_string(length=10):
+        letters = string.ascii_lowercase
+        return ''.join(random.choice(letters) for i in range(length))
+
+    def random_int(min_val=1, max_val=100):
+        return random.randint(min_val, max_val)
+    
+    keys = ['name', 'age', 'address']
+    fake_dicts = []
+    
+    for _ in range(num_dicts):
+        fake_dict = {}
+        for key in keys:
+            random_type = random.choice(['str', 'int'])
+            if random_type == 'str':
+                fake_dict[key] = random_string()
+            else:
+                fake_dict[key] = random_int()
+        fake_dicts.append(fake_dict)
+    
+    return fake_dicts

@@ -283,3 +283,16 @@ bricks:
     inputs:
       data:
         type: keypairlist
+  - name: generate_fake_dicts
+    short_description: Generate fake data of type keypairlist.
+    type: function
+    icon: asterisk
+    file_path: basic_operations.py
+    category: basic operations
+    version: 5.2.0
+    inputs:
+      num_dicts:
+        type: int
+    outputs:
+      fake_data:
+        type: keypairlist
