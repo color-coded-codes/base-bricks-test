@@ -296,3 +296,12 @@ bricks:
     outputs:
       fake_data:
         type: keypairlist
+  - name: if_condition
+    display_name: 'IF Condition'
+    type: control
+    icon: arrows-split-up-and-left
+    category: flow control
+    version: 1.0.0
+    inputs:
+      condition:
+        type: bool
