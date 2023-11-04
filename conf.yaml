@@ -317,8 +317,15 @@ bricks:
     options:
       - name: first_index
         display_name: First Index
-        type: number
+        type: integer
         step: 1
         max: 'Infinity'
         min: '-Infinity'
         default: 0
+      - name: last_index
+        display_name: Last Index
+        type: integer
+        step: 1
+        max: 'Infinity'
+        min: '-Infinity'
+        default: 10
