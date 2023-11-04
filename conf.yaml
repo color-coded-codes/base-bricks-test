@@ -319,13 +319,13 @@ bricks:
         display_name: First Index
         type: integer
         step: 1
-        max: 'Infinity'
-        min: '-Infinity'
+        max: 10000000000
+        min: -10000000000
         default: 0
       - name: last_index
         display_name: Last Index
         type: integer
         step: 1
-        max: 'Infinity'
-        min: '-Infinity'
+        max: 10000000000
+        min: -10000000000
         default: 10
