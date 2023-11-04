@@ -297,7 +297,7 @@ bricks:
       fake_data:
         type: keypairlist
   - name: if_condition
-    display_name: 'IF Condition'
+    display_name: 'If'
     type: control
     icon: arrows-split-up-and-left
     category: flow control
@@ -306,7 +306,7 @@ bricks:
       condition:
         type: bool
   - name: for_loop
-    display_name: 'For Loop'
+    display_name: 'For'
     type: control
     icon: repeat
     category: flow control
@@ -332,3 +332,17 @@ bricks:
         max: 10000000000
         min: -10000000000
         default: 10
+  - name: for_each_loop
+    display_name: 'For each'
+    type: control
+    icon: repeat
+    category: flow control
+    version: 1.0.0
+    inputs:
+      list:
+        type: iterable
+    outputs:
+      element:
+        type: any
+      index:
+        type: int
