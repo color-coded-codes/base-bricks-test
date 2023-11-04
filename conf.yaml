@@ -355,3 +355,9 @@ bricks:
     inputs:
       cond:
         type: bool
+  - name: try_catch
+    display_name: 'Try Catch'
+    type: control
+    icon: triangle-exclamation
+    category: flow control
+    version: 1.0.0
