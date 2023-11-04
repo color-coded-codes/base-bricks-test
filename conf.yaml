@@ -311,19 +311,22 @@ bricks:
     icon: repeat
     category: flow control
     version: 1.0.0
+    inputs:
+      start:
+        type: int
+      end:
+        type: int
     outputs:
       index:
         type: int
     options:
-      - name: first_index
-        display_name: First Index
+      - name: start
         type: integer
         step: 1
         max: 10000000000
         min: -10000000000
         default: 0
-      - name: last_index
-        display_name: Last Index
+      - name: end
         type: integer
         step: 1
         max: 10000000000
