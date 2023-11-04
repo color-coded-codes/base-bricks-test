@@ -346,3 +346,16 @@ bricks:
         type: any
       index:
         type: int
+  - name: while_loop
+    display_name: 'While'
+    type: control
+    icon: repeat
+    category: flow control
+    version: 1.0.0
+    inputs:
+      condition:
+        type: bool
+    options:
+      - name: condition
+        type: toggle
+        default: true
