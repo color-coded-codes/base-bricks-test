@@ -353,9 +353,5 @@ bricks:
     category: flow control
     version: 1.0.0
     inputs:
-      condition:
+      cond:
         type: bool
-    options:
-      - name: condition
-        type: toggle
-        default: true
