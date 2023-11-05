@@ -373,3 +373,6 @@ bricks:
     icon: code
     category: flow control
     version: 1.0.0
+    inputs:
+      value:
+        type: any
