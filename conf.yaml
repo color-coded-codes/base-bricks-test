@@ -367,3 +367,9 @@ bricks:
     icon: list-ol
     category: flow control
     version: 1.0.0
+  - name: create_variable
+    display_name: 'New Variable'
+    type: control
+    icon: code
+    category: flow control
+    version: 1.0.0
