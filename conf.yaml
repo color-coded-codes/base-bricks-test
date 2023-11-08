@@ -382,7 +382,7 @@ bricks:
     icon: code
     category: variables
     version: 1.0.0
-    output:
+    outputs:
       value:
         type: any
   - name: set_variable
@@ -394,4 +394,3 @@ bricks:
     inputs:
       value:
         type: any
-
