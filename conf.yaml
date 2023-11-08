@@ -368,11 +368,30 @@ bricks:
     category: flow control
     version: 1.0.0
   - name: create_variable
-    display_name: 'New Variable'
+    display_name: 'New variable'
     type: control
     icon: code
-    category: flow control
+    category: variables
     version: 1.0.0
     inputs:
       value:
         type: any
+  - name: get_variable
+    display_name: 'Get variable'
+    type: control
+    icon: code
+    category: variables
+    version: 1.0.0
+    output:
+      value:
+        type: any
+  - name: set_variable
+    display_name: 'Set variable'
+    type: control
+    icon: code
+    category: variables
+    version: 1.0.0
+    inputs:
+      value:
+        type: any
+
