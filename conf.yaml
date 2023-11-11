@@ -394,3 +394,16 @@ bricks:
     inputs:
       value:
         type: any
+  - name: as_is
+    short_description: get integer and return integer
+    type: function
+    icon: cube
+    file_path: basic_operations.py
+    category: basic operations
+    version: 1.2.0
+    inputs:
+      number:
+        type: int
+    outputs:
+      number:
+        type: int

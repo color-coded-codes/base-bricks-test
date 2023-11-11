@@ -114,3 +114,7 @@ def generate_fake_dicts(num_dicts=10):
         fake_dicts.append(fake_dict)
     
     return fake_dicts
+
+
+def as_is(number):
+    return number
