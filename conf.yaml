@@ -296,6 +296,7 @@ bricks:
     outputs:
       fake_data:
         type: keypairlist
+  # control nodes
   - name: if_condition
     display_name: 'If'
     type: control
@@ -407,3 +408,230 @@ bricks:
     outputs:
       number:
         type: int
+  # test here
+  - name: read_text_file
+    display_name: 'Read Text File'
+    short_description: Read the content of a text file and return it as a text.
+    type: function
+    icon: file-lines
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      file_path:
+        type: str
+    outputs:
+      file_content:
+        type: str
+  - name: generate_random_text
+    display_name: 'Generate Text'
+    short_description: Generating a random text.
+    type: function
+    icon: font
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      n:
+        type: int
+    outputs:
+      generated_text:
+        type: str
+    options:
+      - name: is_words
+        display_name: Generate Words
+        type: toggle
+        default: false
+      - name: reference_text
+        display_name: Reference Words
+        type: textarea
+        default: this is default text a bit more extensive than others
+        max_characters: 1000
+  - name: generate_random_integer
+    display_name: 'Generate Integer'
+    short_description: Generating a random integer value.
+    type: function
+    icon: '9'
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    outputs:
+      random_integer:
+        type: int
+    options:
+      - name: min_value
+        type: integer
+        step: 1
+        max: 10
+        min: 0
+        default: 0
+      - name: max_value
+        type: integer
+        step: 1
+        max: 200
+        min: 0
+        default: 100
+  - name: create_file_with_content
+    display_name: 'Create File'
+    short_description: Create a text file with a text content.
+    type: function
+    icon: file-lines
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      text_content:
+        type: str
+      file_path:
+        type: str
+      file_name:
+        type: str
+    outputs:
+      file_location:
+        type: str
+  - name: list_files_in_folder
+    display_name: 'List of files'
+    short_description: List of files with there size in KB.
+    type: function
+    icon: table-list
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      folder_path:
+        type: str
+    outputs:
+      file_list:
+        type: keypairlist
+  - name: get_values_from_list_of_dicts
+    display_name: 'Extract values list'
+    short_description: Extract values of an attribute from a key-pair list.
+    type: function
+    icon: list
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      dict_list:
+        type: keypairlist
+      key:
+        type: str
+    outputs:
+      values_list:
+        type: list
+  - name: count_characters
+    display_name: 'Count Characters'
+    short_description: count the number of characters.
+    type: function
+    icon: stopwatch-20
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      text:
+        type: str
+    outputs:
+      char_count:
+        type: int
+  - name: count_words
+    display_name: 'Count Words'
+    short_description: count the number of words.
+    type: function
+    icon: stopwatch-20
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      text:
+        type: str
+    outputs:
+      word_count:
+        type: int
+  - name: create_folder_if_not_exists
+    display_name: 'Create Folder'
+    short_description: create a folder.
+    type: function
+    icon: folder
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      folder_path:
+        type: str
+    outputs:
+      folder_path:
+        type: int
+  - name: move_file
+    display_name: 'Move File'
+    short_description: move file to a new destination.
+    type: function
+    icon: folder-tree
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      source_path:
+        type: str
+      destination_folder:
+        type: str
+  - name: update_file_name
+    display_name: 'Update Name'
+    short_description: Update file name.
+    type: function
+    icon: pen-clip
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      old_file_path:
+        type: str
+      new_file_name:
+        type: str
+    outputs:
+      new_file_path:
+        type: str
+  - name: delete_file
+    display_name: 'Delete File'
+    short_description: Delete file.
+    type: function
+    icon: trash-can
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      file_path:
+        type: str
+  - name: concatenate_strings_with_separator
+    display_name: 'Concatenate'
+    short_description: Concatenate two texts.
+    type: function
+    icon: font
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      string1:
+        type: str
+      string2:
+        type: str
+    outputs:
+      result_string:
+        type: str
+    options:
+      - name: separator
+        type: text
+        default: _
+  - name: parse_integer_to_text
+    display_name: 'Int to Str'
+    short_description: Convert integer to string.
+    type: function
+    icon: font
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      number:
+        type: int
+    outputs:
+      text_representation:
+        type: str

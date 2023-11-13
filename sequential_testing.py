@@ -17,36 +17,36 @@ def read_text_file(file_path):
     return file_content
 
 
-def generate_random_words(reference_text, n):
+def generate_random_text(n, options):
     import random
+    import string
     # Split the reference text into words
-    words = reference_text.split()
+    generate_words = options['is_words']
+    reference_text = options['reference_text']
 
-    # Ensure n is non-negative
-    n = max(n, 0)
+    if generate_words:
+        words = reference_text.split()
 
-    # Generate the new text by randomly selecting words
-    generated_words = [random.choice(words) for _ in range(n)]
+        # Ensure n is non-negative
+        n = max(n, 0)
 
-    # Combine the generated words into a text
-    generated_text = ' '.join(generated_words)
+        # Generate the new text by randomly selecting words
+        generated_words = [random.choice(words) for _ in range(n)]
+
+        # Combine the generated words into a text
+        generated_text = ' '.join(generated_words)
+    else:
+        characters = string.ascii_letters + string.digits + string.punctuation + ' '
+        generated_text = ''.join(random.choice(characters) for _ in range(n))
 
     return generated_text
 
 
-def generate_random_text(n):
+def generate_random_integer(options):
     import random
-    import string
-    
-    characters = string.ascii_letters + string.digits + string.punctuation + ' '
-    random_text = ''.join(random.choice(characters) for _ in range(n))
-    
-    return random_text
 
-
-def generate_random_integer(min_value, max_value):
-    import random
-    
+    min_value = options['min_value']
+    max_value = options['max_value']
     random_integer = random.randint(min_value, max_value)
     
     return random_integer
@@ -109,3 +109,55 @@ def count_words(text):
     
     return word_count
 
+
+def create_folder_if_not_exists(folder_path):
+    import os
+    
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+    
+    return folder_path
+
+
+
+def move_file(source_path, destination_folder):
+    import shutil
+    
+    shutil.move(source_path, destination_folder)
+
+
+
+def update_file_name(old_file_path, new_file_name):
+    import os
+    
+    # Extract the directory path and the current file name
+    directory_path, current_file_name = os.path.split(old_file_path)
+    
+    # Create the new file path with the updated name
+    new_file_path = os.path.join(directory_path, new_file_name)
+    
+    # Rename the file with the new name
+    os.rename(old_file_path, new_file_path)
+    
+    return new_file_path
+
+
+def delete_file(file_path):
+    import os
+    
+    os.remove(file_path)
+
+
+def concatenate_strings_with_separator(string1, string2, options):
+    separator=options['separator']
+    result_string = string1 + separator + string2
+    return result_string
+
+
+def parse_integer_to_text(number):
+    if not isinstance(number, int):
+        raise ValueError("Input must be an integer")
+    
+    text_representation = str(number)
+    
+    return text_representation
