@@ -619,7 +619,7 @@ bricks:
         type: str
     options:
       - name: separator
-        type: text
+        type: input
         default: _
   - name: parse_integer_to_text
     display_name: 'Int to Str'
