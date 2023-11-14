@@ -635,3 +635,71 @@ bricks:
     outputs:
       text_representation:
         type: str
+  - name: generate_random_integers
+    display_name: 'Generate Integer List'
+    short_description: generaye a list of random integer values.
+    type: function
+    icon: list
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      n:
+        type: int
+    outputs:
+      int_list:
+        type: list
+  - name: create_3d_vector
+    display_name: 'Create Vector'
+    short_description: Create a 3D vector.
+    type: function
+    icon: vector-square
+    requirements:
+      - numpy
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      list1:
+        type: list
+      list2:
+        type: list
+      list3:
+        type: list
+    outputs:
+      vector:
+        type: vector
+  - name: scalar_product
+    display_name: 'Scalar Product'
+    short_description: Scalar product of two vectors.
+    type: function
+    icon: vector-square
+    requirements:
+      - numpy
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      vector1:
+        type: vector
+      vector2:
+        type: vector
+    outputs:
+      product:
+        type: int
+  - name: append_to_list
+    display_name: 'Append Value to List'
+    short_description: Append a value to list.
+    type: function
+    icon: bars-staggered
+    file_path: sequential_testing.py
+    category: sequential testing bricks
+    version: 0.2.0
+    inputs:
+      lst:
+        type: list
+      value:
+        type: int
+    outputs:
+      lst:
+        type: list

@@ -161,3 +161,26 @@ def parse_integer_to_text(number):
     text_representation = str(number)
     
     return text_representation
+
+
+def generate_random_integers(n):
+    from random import randint
+    int_list = [randint(1, 100) for _ in range(n)]
+    return int_list
+
+
+def create_3d_vector(list1, list2, list3):
+    import numpy as np
+    vector = np.array([list1, list2, list3])
+    return vector
+
+
+def scalar_product(vector1, vector2):
+    import numpy as np
+    product = np.dot(vector1, vector2)
+    return product
+
+
+def append_to_list(lst, value):
+    lst.append(value)
+    return lst
