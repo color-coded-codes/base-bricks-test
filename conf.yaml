@@ -560,7 +560,7 @@ bricks:
         type: str
     outputs:
       folder_path:
-        type: int
+        type: str
   - name: move_file
     display_name: 'Move File'
     short_description: move file to a new destination.
