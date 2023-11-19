@@ -370,7 +370,7 @@ bricks:
     version: 1.0.0
   - name: create_variable
     display_name: 'New variable'
-    type: control
+    type: variable
     icon: code
     category: variables
     version: 1.0.0
@@ -379,7 +379,7 @@ bricks:
         type: any
   - name: get_variable
     display_name: 'Get variable'
-    type: control
+    type: variable
     icon: code
     category: variables
     version: 1.0.0
@@ -388,7 +388,7 @@ bricks:
         type: any
   - name: set_variable
     display_name: 'Set variable'
-    type: control
+    type: variable
     icon: code
     category: variables
     version: 1.0.0
