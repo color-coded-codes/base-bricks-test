@@ -703,3 +703,19 @@ bricks:
     outputs:
       lst:
         type: list
+  - name: greater_or_equal_than
+    display_name: 'a ≥ blockquote'
+    short_description: Append a value to list.
+    type: function
+    icon: cube
+    file_path: sequential_testing.py
+    category: logical comparators
+    version: 0.2.0
+    inputs:
+      a:
+        type: number
+      b:
+        type: number
+    outputs:
+      result:
+        type: bool
