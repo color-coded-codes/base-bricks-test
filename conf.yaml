@@ -704,7 +704,7 @@ bricks:
       lst:
         type: list
   - name: greater_or_equal_than
-    display_name: 'a ≥ blockquote'
+    display_name: 'a ≥ b'
     short_description: Append a value to list.
     type: function
     icon: cube
