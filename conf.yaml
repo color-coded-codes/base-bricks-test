@@ -413,7 +413,7 @@ bricks:
     type: function
     icon: file-lines
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       file_path:
@@ -427,7 +427,7 @@ bricks:
     type: function
     icon: font
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       n:
@@ -451,7 +451,7 @@ bricks:
     type: function
     icon: '9'
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     outputs:
       random_integer:
@@ -475,7 +475,7 @@ bricks:
     type: function
     icon: file-lines
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       text_content:
@@ -493,7 +493,7 @@ bricks:
     type: function
     icon: table-list
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       folder_path:
@@ -507,7 +507,7 @@ bricks:
     type: function
     icon: list
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       dict_list:
@@ -523,7 +523,7 @@ bricks:
     type: function
     icon: stopwatch-20
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       text:
@@ -537,7 +537,7 @@ bricks:
     type: function
     icon: stopwatch-20
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       text:
@@ -551,7 +551,7 @@ bricks:
     type: function
     icon: folder
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       folder_path:
@@ -565,7 +565,7 @@ bricks:
     type: function
     icon: folder-tree
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       source_path:
@@ -578,7 +578,7 @@ bricks:
     type: function
     icon: pen-clip
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       old_file_path:
@@ -594,7 +594,7 @@ bricks:
     type: function
     icon: trash-can
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       file_path:
@@ -605,7 +605,7 @@ bricks:
     type: function
     icon: font
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       string1:
@@ -625,7 +625,7 @@ bricks:
     type: function
     icon: font
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       number:
@@ -639,7 +639,7 @@ bricks:
     type: function
     icon: list
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       n:
@@ -655,7 +655,7 @@ bricks:
     requirements:
       - numpy
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       list1:
@@ -675,7 +675,7 @@ bricks:
     requirements:
       - numpy
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       vector1:
@@ -691,7 +691,7 @@ bricks:
     type: function
     icon: bars-staggered
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       lst:
