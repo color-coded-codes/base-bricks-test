@@ -231,9 +231,9 @@ bricks:
     category: graphs
     inputs:
       y:
-        type: number[]
+        type: list
       x:
-        type: any[]
+        type: any
     optional_inputs:
       x: []
   # - name: generate_random_numbers
