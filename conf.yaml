@@ -717,3 +717,80 @@ bricks:
     outputs:
       result:
         type: bool
+  - name: greater_or_equal_than
+    display_name: 'a ≥ b'
+    short_description: Append a value to list.
+    type: function
+    icon: cube
+    file_path: sequential_testing.py
+    category: logical comparators
+    version: 0.2.0
+    inputs:
+      a:
+        type: number
+      b:
+        type: number
+    outputs:
+      result:
+        type: bool
+  - name: connect_to_external_service
+    display_name: 'Socket Service'
+    short_description: a test for docker configuration, just a socket client that tries to connect to something.
+    type: function
+    icon: tower-broadcast
+    # requirements:
+    #   - numpy
+    file_path: docker_testing.py
+    category: Docker Testing
+    version: 0.2.0
+    inputs:
+      host:
+        type: str
+    outputs:
+      response:
+        type: str
+    docker:
+      ports:
+        - target: 12345
+          published: 12345
+          protocol: tcp
+  - name: get_database_session
+    display_name: 'PostgreSQL'
+    short_description: Connection to 'PostgreSQL'.
+    type: function
+    icon: database
+    requirements:
+      - sqlalchemy
+      - psycopg2
+    file_path: docker_testing.py
+    category: Docker Testing
+    version: 0.2.0
+    outputs:
+      session:
+        type: any
+    options:
+      - name: db_name
+        display_name: DB Name
+        type: input
+      - name: db_user
+        display_name: DB User
+        type: input
+      - name: db_password
+        display_name: DB Password
+        type: input
+      - name: db_host
+        display_name: DB Host
+        type: input
+    docker:
+      service: db-postgres
+      image: postgres
+      image-version: 16
+      ports:
+        - target: 5432
+          published: 5432
+          protocol: tcp
+      volumes:
+        - name: db-volume
+        - container-path: /data
+      networks:
+        - backend
