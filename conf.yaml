@@ -791,7 +791,7 @@ bricks:
           protocol: tcp
       volumes:
         - name: db-volume
-        - container-path: /data
+          container-path: /data
       networks:
         - backend
       secrets:
