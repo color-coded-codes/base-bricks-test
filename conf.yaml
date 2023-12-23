@@ -717,22 +717,6 @@ bricks:
     outputs:
       result:
         type: bool
-  - name: greater_or_equal_than
-    display_name: 'a ≥ b'
-    short_description: Append a value to list.
-    type: function
-    icon: cube
-    file_path: sequential_testing.py
-    category: logical comparators
-    version: 0.2.0
-    inputs:
-      a:
-        type: number
-      b:
-        type: number
-    outputs:
-      result:
-        type: bool
   - name: connect_to_external_service
     display_name: 'Socket Service'
     short_description: a test for docker configuration, just a socket client that tries to connect to something.
