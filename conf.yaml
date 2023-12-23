@@ -795,6 +795,6 @@ bricks:
       networks:
         - backend
       secrets:
-        - name:
+        - name: postgres_password
           env: POSTGRES_PASSWORD_FILE
           file: postgres_password.txt
