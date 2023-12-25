@@ -246,19 +246,19 @@ bricks:
   #   outputs:
   #     random_list:
   #       type: number[]
-  # - name: compute_mean
-  #   short_description: computing the mean of a list of number.
-  #   type: function
-  #   icon: calculator
-  #   file_path: basic_operations.py
-  #   category: basic operations
-  #   version: 1.1.1
-  #   inputs:
-  #     numbers:
-  #       type: number[]
-  #   outputs:
-  #     random_list:
-  #       type: float
+  - name: compute_mean
+    short_description: computing the mean of a list of number.
+    type: function
+    icon: calculator
+    file_path: basic_operations.py
+    category: basic operations
+    version: 1.1.1
+    inputs:
+      numbers:
+        type: list
+    outputs:
+      random_list:
+        type: float
   # - name: number_of_characters
   #   short_description: Compute the number of characters in a text.
   #   type: function
