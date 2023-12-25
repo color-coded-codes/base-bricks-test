@@ -738,6 +738,12 @@ bricks:
         - target: 12345
           published: 12345
           protocol: tcp
+      volumes:
+        - name: db-volume
+          container-path: /another_folder/data
+      secrets:
+        - name: postgres_password
+          env: POSTGRES_PASSWORD_FILE
   - name: get_database_session
     display_name: 'PostgreSQL'
     short_description: Connection to 'PostgreSQL'.
@@ -781,4 +787,3 @@ bricks:
       secrets:
         - name: postgres_password
           env: POSTGRES_PASSWORD_FILE
-          file: postgres_password.txt
