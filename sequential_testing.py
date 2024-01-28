@@ -184,3 +184,7 @@ def scalar_product(vector1, vector2):
 def append_to_list(lst, value):
     lst.append(value)
     return lst
+
+def greater_or_equal_than(a, b):
+    result = a>=b
+    return result

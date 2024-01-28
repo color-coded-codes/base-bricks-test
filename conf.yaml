@@ -1,186 +1,184 @@
 interpreter_version: v1.0
 bricks:
-  - name: add_two_numbers
-    display_name: 'Add 2 NUMBERS'
-    short_description: Receives two numeric inputs and returns their sum, allowing for arithmetic calculations.
-    description: |
-      ![Alt text](https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80)
-      # Heading 1
-      ## Heading 2
-      ### Heading 3
-      #### Heading 4
-      ##### Heading 5
-      ###### Heading 6
+  # - name: add_two_numbers
+  #   display_name: 'Add 2 NUMBERS'
+  #   short_description: Receives two numeric inputs and returns their sum, allowing for arithmetic calculations.
+  #   description: |
+  #     ![Alt text](https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80)
+  #     # Heading 1
+  #     ## Heading 2
+  #     ### Heading 3
+  #     #### Heading 4
+  #     ##### Heading 5
+  #     ###### Heading 6
 
-      Lorem **ipsum dolor** sit amet, [Google](https://www.google.com) consectetur adipiscing elit. Curabitur rhoncus, justo eget volutpat semper, erat sapien mollis elit, eget congue est augue et metus. Proin sit amet libero id eros vestibulum consequat. Vivamus posuere, elit vitae interdum sollicitudin, risus justo egestas velit, vitae dapibus odio orci vitae nunc.
+  #     Lorem **ipsum dolor** sit amet, [Google](https://www.google.com) consectetur adipiscing elit. Curabitur rhoncus, justo eget volutpat semper, erat sapien mollis elit, eget congue est augue et metus. Proin sit amet libero id eros vestibulum consequat. Vivamus posuere, elit vitae interdum sollicitudin, risus justo egestas velit, vitae dapibus odio orci vitae nunc.
 
-      **Fusce sed enim volutpat**, Lorem *ipsum dolor sit amet*, consectetur adipiscing elit. Curabitur rhoncus, justo eget volutpat semper, erat sapien mollis elit, eget congue est augue et metus. Proin sit amet libero id eros vestibulum consequat. Vivamus posuere, elit vitae interdum sollicitudin, risus justo egestas velit, vitae dapibus odio orci vitae nunc. Fusce sed enim volutpat.
+  #     **Fusce sed enim volutpat**, Lorem *ipsum dolor sit amet*, consectetur adipiscing elit. Curabitur rhoncus, justo eget volutpat semper, erat sapien mollis elit, eget congue est augue et metus. Proin sit amet libero id eros vestibulum consequat. Vivamus posuere, elit vitae interdum sollicitudin, risus justo egestas velit, vitae dapibus odio orci vitae nunc. Fusce sed enim volutpat.
 
-      Fusce sed enim volutpat:
-      - Item 1
-      - Item 2
+  #     Fusce sed enim volutpat:
+  #     - Item 1
+  #     - Item 2
 
-      ---
-      Fusce sed enim volutpat:
-      1. First item
-      2. Second item
+  #     ---
+  #     Fusce sed enim volutpat:
+  #     1. First item
+  #     2. Second item
 
-      > This is a blockquote
+  #     > This is a blockquote
 
-      `requirements==1.2`
+  #     `requirements==1.2`
 
-      And a code blpck here:
+  #     And a code blpck here:
 
-      ```
-      from django.conf import settings
+  #     ```
+  #     from django.conf import settings
 
-      for x in y:
-          print(x)
+  #     for x in y:
+  #         print(x)
 
+  #     ```
+  #     ---
 
-      ```
-      ---
+  #     For each thing there is a ~~strikethrough~~ to show!
 
-      For each thing there is a ~~strikethrough~~ to show!
+  #     | Header 1 | Header 2 |
+  #     |----------|----------|
+  #     | Cell 1   | Cell 2   |
+  #     | Cell 3   | Cell 4   |
 
-      | Header 1 | Header 2 |
-      |----------|----------|
-      | Cell 1   | Cell 2   |
-      | Cell 3   | Cell 4   |
+  #     - [x] Task 1 (completed)
+  #     - [ ] Task 2 (not completed)
 
-      - [x] Task 1 (completed)
-      - [ ] Task 2 (not completed)
+  #     is this emoji working?? :smile:
 
-      is this emoji working?? :smile:
+  #     Term 1
+  #     : Definition 1
 
-      Term 1
-      : Definition 1
+  #     Term 2
+  #     : Definition 2
 
-      Term 2
-      : Definition 2
+  #     content in paragraph with footnote[^1] markup.
 
+  #     [^1]: footnote explain
 
-      content in paragraph with footnote[^1] markup.
+  #     The HTML specification
+  #     is maintained by the W3C.
 
-      [^1]: footnote explain
+  #     *[HTML]: Hyper Text Markup Language
+  #     *[W3C]: World Wide Web Consortium
 
-      The HTML specification
-      is maintained by the W3C.
+  #     Hello~subscript~
+  #     CH~3~CH~2~OH
 
-      *[HTML]: Hyper Text Markup Language
-      *[W3C]: World Wide Web Consortium
+  #     here for testing Math:
+  #     function $f$
 
-      Hello~subscript~
-      CH~3~CH~2~OH
-
-      here for testing Math:
-      function $f$
-
-      $$
-      c = \pm\sqrt{a^2 + b^2}
-      $$
-    type: function
-    status: dev
-    icon: plus
-    python_compatibility:
-      - '3.10'
-      - '3.9'
-      - '3.8'
-    file_path: basic_operations.py
-    category: basic operations
-    version: 1.0.0
-    output_prefix: added
-    inputs:
-      a:
-        type: number
-      b:
-        type: number
-    outputs:
-      result:
-        type: float
-    options:
-      - name: Has_Value
-        type: toggle
-        default: false
-      - name: Learning_Rate
-        type: number
-        step: .1
-        max: 5
-        min: -5
-        default: 0
-      - name: Algorithm
-        type: select
-        choices:
-          - algo1
-          - advanced algorithm
-          - another algo
-        default: another algo
-      - name: Project_Name
-        type: input
-        default: this is default text
-        max_characters: 50
-      - name: Prompt
-        type: textarea
-        default: this is default text a bit more extensive than others
-        max_characters: 1000
-  - name: safe_divide
-    short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
-    type: function
-    icon: divide
-    file_path: basic_operations.py
-    category: basic operations
-    version: 0.2.0
-    output_prefix: divided
-    inputs:
-      a:
-        type: float
-      b:
-        type: float
-    outputs:
-      result:
-        type: float
-  - name: modulo
-    short_description: Takes two numbers as input, divides the first by the second, and returns the remainder.
-    type: function
-    icon: square-root-variable
-    file_path: basic_operations.py
-    category: basic operations
-    version: 2.2.0
-    inputs:
-      a:
-        type: number
-      b:
-        type: float
-    outputs:
-      result:
-        type: float
-  - name: str2int
-    short_description: Takes text and convert it to integer.
-    type: function
-    icon: font
-    file_path: basic_operations.py
-    category: basic operations
-    version: 1.2.0
-    inputs:
-      text:
-        type: str
-    outputs:
-      integer_number:
-        type: int
-  - name: list_to_vector
-    short_description: Accepts a list of numerical values and transforms it into a mathematical vector object.
-    type: function
-    icon: bezier-curve
-    file_path: matrix/matrix_and_vectors.py
-    requirements:
-      - numpy
-    prefix: array
-    inputs:
-      numbers:
-        type: list
-    outputs:
-      list:
-        type: numpytensor
+  #     $$
+  #     c = \pm\sqrt{a^2 + b^2}
+  #     $$
+  #   type: function
+  #   status: dev
+  #   icon: plus
+  #   python_compatibility:
+  #     - '3.10'
+  #     - '3.9'
+  #     - '3.8'
+  #   file_path: basic_operations.py
+  #   category: basic operations
+  #   version: 1.0.0
+  #   output_prefix: added
+  #   inputs:
+  #     a:
+  #       type: number
+  #     b:
+  #       type: number
+  #   outputs:
+  #     result:
+  #       type: float
+  #   options:
+  #     - name: Has_Value
+  #       type: toggle
+  #       default: false
+  #     - name: Learning_Rate
+  #       type: number
+  #       step: .1
+  #       max: 5
+  #       min: -5
+  #       default: 0
+  #     - name: Algorithm
+  #       type: select
+  #       choices:
+  #         - algo1
+  #         - advanced algorithm
+  #         - another algo
+  #       default: another algo
+  #     - name: Project_Name
+  #       type: input
+  #       default: this is default text
+  #       max_characters: 50
+  #     - name: Prompt
+  #       type: textarea
+  #       default: this is default text a bit more extensive than others
+  #       max_characters: 1000
+  # - name: safe_divide
+  #   short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
+  #   type: function
+  #   icon: divide
+  #   file_path: basic_operations.py
+  #   category: basic operations
+  #   version: 0.2.0
+  #   output_prefix: divided
+  #   inputs:
+  #     a:
+  #       type: float
+  #     b:
+  #       type: float
+  #   outputs:
+  #     result:
+  #       type: float
+  # - name: modulo
+  #   short_description: Takes two numbers as input, divides the first by the second, and returns the remainder.
+  #   type: function
+  #   icon: square-root-variable
+  #   file_path: basic_operations.py
+  #   category: basic operations
+  #   version: 2.2.0
+  #   inputs:
+  #     a:
+  #       type: number
+  #     b:
+  #       type: float
+  #   outputs:
+  #     result:
+  #       type: float
+  # - name: str2int
+  #   short_description: Takes text and convert it to integer.
+  #   type: function
+  #   icon: font
+  #   file_path: basic_operations.py
+  #   category: basic operations
+  #   version: 1.2.0
+  #   inputs:
+  #     text:
+  #       type: str
+  #   outputs:
+  #     integer_number:
+  #       type: int
+  # - name: list_to_vector
+  #   short_description: Accepts a list of numerical values and transforms it into a mathematical vector object.
+  #   type: function
+  #   icon: bezier-curve
+  #   file_path: matrix/matrix_and_vectors.py
+  #   requirements:
+  #     - numpy
+  #   prefix: array
+  #   inputs:
+  #     numbers:
+  #       type: list
+  #   outputs:
+  #     list:
+  #       type: numpytensor
   - name: text_entry
     display_name: 'Text'
     short_description: Textual input not exceeding 4096 characters.
@@ -233,21 +231,21 @@ bricks:
     category: graphs
     inputs:
       y:
-        type: number[]
+        type: list
       x:
-        type: any[]
+        type: any
     optional_inputs:
       x: []
-  - name: generate_random_numbers
-    short_description: random array of integers.
-    type: function
-    icon: list
-    file_path: basic_operations.py
-    category: random operators
-    version: 1.1.1
-    outputs:
-      random_list:
-        type: number[]
+  # - name: generate_random_numbers
+  #   short_description: random array of integers.
+  #   type: function
+  #   icon: list
+  #   file_path: basic_operations.py
+  #   category: random operators
+  #   version: 1.1.1
+  #   outputs:
+  #     random_list:
+  #       type: number[]
   - name: compute_mean
     short_description: computing the mean of a list of number.
     type: function
@@ -257,23 +255,23 @@ bricks:
     version: 1.1.1
     inputs:
       numbers:
-        type: number[]
+        type: list
     outputs:
       random_list:
         type: float
-  - name: number_of_characters
-    short_description: Compute the number of characters in a text.
-    type: function
-    icon: font
-    file_path: basic_operations.py
-    category: text processing
-    version: 7.2.0
-    inputs:
-      text:
-        type: str
-    outputs:
-      count:
-        type: int
+  # - name: number_of_characters
+  #   short_description: Compute the number of characters in a text.
+  #   type: function
+  #   icon: font
+  #   file_path: basic_operations.py
+  #   category: text processing
+  #   version: 7.2.0
+  #   inputs:
+  #     text:
+  #       type: str
+  #   outputs:
+  #     count:
+  #       type: int
   - name: table_chart
     display_name: 'Table'
     short_description: A table representing data.
@@ -283,19 +281,19 @@ bricks:
     inputs:
       data:
         type: keypairlist
-  - name: generate_fake_dicts
-    short_description: Generate fake data of type keypairlist.
-    type: function
-    icon: asterisk
-    file_path: basic_operations.py
-    category: basic operations
-    version: 5.2.0
-    inputs:
-      num_dicts:
-        type: int
-    outputs:
-      fake_data:
-        type: keypairlist
+  # - name: generate_fake_dicts
+  #   short_description: Generate fake data of type keypairlist.
+  #   type: function
+  #   icon: asterisk
+  #   file_path: basic_operations.py
+  #   category: basic operations
+  #   version: 5.2.0
+  #   inputs:
+  #     num_dicts:
+  #       type: int
+  #   outputs:
+  #     fake_data:
+  #       type: keypairlist
   # control nodes
   - name: if_condition
     display_name: 'If'
@@ -415,7 +413,7 @@ bricks:
     type: function
     icon: file-lines
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       file_path:
@@ -429,7 +427,7 @@ bricks:
     type: function
     icon: font
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       n:
@@ -453,7 +451,7 @@ bricks:
     type: function
     icon: '9'
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     outputs:
       random_integer:
@@ -477,7 +475,7 @@ bricks:
     type: function
     icon: file-lines
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       text_content:
@@ -495,7 +493,7 @@ bricks:
     type: function
     icon: table-list
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       folder_path:
@@ -509,7 +507,7 @@ bricks:
     type: function
     icon: list
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       dict_list:
@@ -525,7 +523,7 @@ bricks:
     type: function
     icon: stopwatch-20
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       text:
@@ -539,7 +537,7 @@ bricks:
     type: function
     icon: stopwatch-20
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       text:
@@ -553,7 +551,7 @@ bricks:
     type: function
     icon: folder
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       folder_path:
@@ -567,7 +565,7 @@ bricks:
     type: function
     icon: folder-tree
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       source_path:
@@ -580,7 +578,7 @@ bricks:
     type: function
     icon: pen-clip
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       old_file_path:
@@ -596,7 +594,7 @@ bricks:
     type: function
     icon: trash-can
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       file_path:
@@ -607,7 +605,7 @@ bricks:
     type: function
     icon: font
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       string1:
@@ -627,7 +625,7 @@ bricks:
     type: function
     icon: font
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       number:
@@ -641,7 +639,7 @@ bricks:
     type: function
     icon: list
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       n:
@@ -657,7 +655,7 @@ bricks:
     requirements:
       - numpy
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       list1:
@@ -677,7 +675,7 @@ bricks:
     requirements:
       - numpy
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       vector1:
@@ -693,7 +691,7 @@ bricks:
     type: function
     icon: bars-staggered
     file_path: sequential_testing.py
-    category: sequential testing bricks
+    category: Files & Folders
     version: 0.2.0
     inputs:
       lst:
@@ -703,6 +701,92 @@ bricks:
     outputs:
       lst:
         type: list
+  - name: greater_or_equal_than
+    display_name: 'a ≥ b'
+    short_description: Append a value to list.
+    type: function
+    icon: cube
+    file_path: sequential_testing.py
+    category: logical comparators
+    version: 0.2.0
+    inputs:
+      a:
+        type: number
+      b:
+        type: number
+    outputs:
+      result:
+        type: bool
+  - name: connect_to_external_service
+    display_name: 'Socket Service'
+    short_description: a test for docker configuration, just a socket client that tries to connect to something.
+    type: function
+    icon: tower-broadcast
+    # requirements:
+    #   - numpy
+    file_path: docker_testing.py
+    category: Docker Testing
+    version: 0.2.0
+    inputs:
+      host:
+        type: str
+    outputs:
+      response:
+        type: str
+    docker:
+      ports:
+        - target: 12345
+          published: 12345
+          protocol: tcp
+      volumes:
+        - name: db-volume
+          container-path: /another_folder/data
+      secrets:
+        - name: postgres_password
+          env: POSTGRES_PASSWORD_FILE
+  - name: get_database_session
+    display_name: 'PostgreSQL'
+    short_description: Connection to 'PostgreSQL'.
+    type: function
+    icon: database
+    requirements:
+      - sqlalchemy
+      - psycopg2
+    file_path: docker_testing.py
+    category: Docker Testing
+    version: 0.2.0
+    outputs:
+      session:
+        type: any
+    options:
+      - name: db_name
+        display_name: DB Name
+        type: input
+      - name: db_user
+        display_name: DB User
+        type: input
+      - name: db_password
+        display_name: DB Password
+        type: input
+      - name: db_host
+        display_name: DB Host
+        type: input
+    docker:
+      service: db-postgres
+      image: postgres
+      image-version: 16
+      ports:
+        - target: 5432
+          published: 5432
+          protocol: tcp
+      volumes:
+        - name: db-volume
+          container-path: /data
+      networks:
+        - backend
+      secrets:
+        - name: postgres_password
+          env: POSTGRES_PASSWORD_FILE
   # ui editor
   - name: text_placeholder
     is_trigger: false
