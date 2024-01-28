@@ -703,3 +703,120 @@ bricks:
     outputs:
       lst:
         type: list
+  # ui editor
+  - name: text_placeholder
+    is_trigger: false
+    display_name: 'Text'
+    type: ui
+    icon: font
+    category: UI - Streamlit
+    version: 0.2.0
+    inputs:
+      text:
+        type: str
+  - name: image
+    is_trigger: false
+    display_name: 'Image'
+    type: ui
+    icon: image
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      image:
+        type: streamlit_image
+    options:
+      - name: channels
+        display_name: Channels
+        type: select
+        choices:
+          - RGB
+          - BGR
+        default: RGB
+      - name: output_format
+        display_name: Output Format
+        type: select
+        choices:
+          - auto
+          - JPEG
+          - PNG
+        default: auto
+      - name: caption
+        display_name: Caption
+        type: input
+        max_characters: 150
+  - name: video
+    is_trigger: false
+    display_name: Video
+    type: ui
+    icon: video
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      video:
+        type: streamlit_video
+    options:
+      - name: format
+        display_name: Format
+        type: select
+        choices:
+          - video/mp4
+          - video/webm
+          - video/ogg
+        default: video/mp4
+  - name: map
+    is_trigger: false
+    display_name: Map
+    type: ui
+    icon: map
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      data:
+        type: streamlit_data
+    options:
+      - name: size
+        display_name: Size attribute
+        type: input
+        max_characters: 50
+  - name: text_placeholder
+    display_name: 'Text'
+    short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
+    type: streamlit
+    icon: font
+    category: Streamlit
+    version: 0.2.0
+    output_prefix: divided
+    inputs:
+      text:
+        type: str
+    outputs:
+      result:
+        type: float
+  - name: text_placeholder
+    display_name: 'Text'
+    short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
+    type: streamlit
+    icon: font
+    category: Streamlit
+    version: 0.2.0
+    output_prefix: divided
+    inputs:
+      text:
+        type: str
+    outputs:
+      result:
+        type: float
+  - name: text_placeholder
+    display_name: 'Text'
+    short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
+    type: streamlit
+    icon: font
+    category: Streamlit
+    version: 0.2.0
+    output_prefix: divided
+    inputs:
+      text:
+        type: str
+    outputs:
+      result:
+        type: float
