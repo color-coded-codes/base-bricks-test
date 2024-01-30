@@ -223,19 +223,19 @@ bricks:
     outputs:
       file_entry:
         type: str
-  - name: bar_chart
-    display_name: 'Bar Chart'
-    short_description: A bar chart visualizes data using rectangular bars, with lengths proportional to the data values.
-    type: graph
-    icon: chart-simple
-    category: graphs
-    inputs:
-      y:
-        type: list
-      x:
-        type: any
-    optional_inputs:
-      x: []
+  # - name: bar_chart
+  #   display_name: 'Bar Chart'
+  #   short_description: A bar chart visualizes data using rectangular bars, with lengths proportional to the data values.
+  #   type: graph
+  #   icon: chart-simple
+  #   category: graphs
+  #   inputs:
+  #     y:
+  #       type: list
+  #     x:
+  #       type: any
+  #   optional_inputs:
+  #     x: []
   # - name: generate_random_numbers
   #   short_description: random array of integers.
   #   type: function
@@ -789,6 +789,7 @@ bricks:
           env: POSTGRES_PASSWORD_FILE
   # ui editor
   - name: text_placeholder
+    is_unique: false
     is_trigger: false
     display_name: 'Text'
     type: ui
@@ -799,6 +800,7 @@ bricks:
       text:
         type: str
   - name: image
+    is_unique: false
     is_trigger: false
     display_name: 'Image'
     type: ui
@@ -829,6 +831,7 @@ bricks:
         type: input
         max_characters: 150
   - name: video
+    is_unique: false
     is_trigger: false
     display_name: Video
     type: ui
@@ -848,6 +851,7 @@ bricks:
           - video/ogg
         default: video/mp4
   - name: map
+    is_unique: false
     is_trigger: false
     display_name: Map
     type: ui
@@ -862,45 +866,290 @@ bricks:
         display_name: Size attribute
         type: input
         max_characters: 50
-  - name: text_placeholder
+  - name: number_input
+    display_name: 'Number'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: hashtag
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      number:
+        type: number
+  - name: text_input
     display_name: 'Text'
-    short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
-    type: streamlit
+    is_unique: true
+    is_trigger: true
+    type: ui
     icon: font
     category: Streamlit
     version: 0.2.0
-    output_prefix: divided
-    inputs:
+    outputs:
       text:
         type: str
-    outputs:
-      result:
-        type: float
-  - name: text_placeholder
-    display_name: 'Text'
-    short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
-    type: streamlit
+  - name: textarea_input
+    display_name: 'Textarea'
+    is_unique: true
+    is_trigger: true
+    type: ui
     icon: font
     category: Streamlit
     version: 0.2.0
-    output_prefix: divided
-    inputs:
+    outputs:
       text:
         type: str
-    outputs:
-      result:
-        type: float
-  - name: text_placeholder
-    display_name: 'Text'
-    short_description: Performs division of two numbers; if the denominator is zero, it returns a safe value.
-    type: streamlit
-    icon: font
+  - name: select
+    display_name: 'Select'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: hand-pointer
     category: Streamlit
     version: 0.2.0
-    output_prefix: divided
-    inputs:
-      text:
-        type: str
     outputs:
-      result:
-        type: float
+      option:
+        type: str
+  - name: multiselect
+    display_name: 'Multiselect'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: hand-pointer
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      option:
+        type: str[]
+  - name: button
+    display_name: 'Button'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: square
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      clicked:
+        type: bool
+  - name: radio
+    display_name: 'Radio'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: circle-dot
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      option:
+        type: str
+  - name: checkbox
+    display_name: Checkbox
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: square-check
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      checked:
+        type: bool
+  - name: toggle
+    display_name: Toggle
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: toggle-on
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      toggled:
+        type: bool
+  - name: line_chart
+    is_unique: false
+    is_trigger: false
+    display_name: Line Chart
+    type: ui
+    icon: chart-line
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      data:
+        type: streamlit_data
+    options:
+      - name: x
+        display_name: X axis attribute
+        type: input
+        max_characters: 50
+      - name: 'y'
+        display_name: Y axis attribute
+        type: input
+        max_characters: 50
+      - name: color
+        display_name: Color attribute
+        type: input
+        max_characters: 50
+  - name: area_chart
+    is_unique: false
+    is_trigger: false
+    display_name: Area Chart
+    type: ui
+    icon: chart-area
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      data:
+        type: streamlit_data
+    options:
+      - name: x
+        display_name: X axis attribute
+        type: input
+        max_characters: 50
+      - name: 'y'
+        display_name: Y axis attribute
+        type: input
+        max_characters: 50
+      - name: color
+        display_name: Color attribute
+        type: input
+        max_characters: 50
+  - name: bar_chart
+    is_unique: false
+    is_trigger: false
+    display_name: Bar Chart
+    type: ui
+    icon: chart-simple
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      data:
+        type: streamlit_data
+    options:
+      - name: x
+        display_name: X axis attribute
+        type: input
+        max_characters: 50
+      - name: 'y'
+        display_name: Y axis attribute
+        type: input
+        max_characters: 50
+      - name: color
+        display_name: Color attribute
+        type: input
+        max_characters: 50
+  - name: scatter_chart
+    is_unique: false
+    is_trigger: false
+    display_name: Scatter Chart
+    type: ui
+    icon: chart-gant
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      data:
+        type: streamlit_data
+    options:
+      - name: x
+        display_name: X axis attribute
+        type: input
+        max_characters: 50
+      - name: 'y'
+        display_name: Y axis attribute
+        type: input
+        max_characters: 50
+      - name: color
+        display_name: Color attribute
+        type: input
+        max_characters: 50
+      - name: size
+        display_name: Size attribute
+        type: input
+        max_characters: 50
+  - name: slider
+    display_name: 'Slider'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: hashtag
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      number:
+        type: number
+  - name: link_button
+    display_name: 'Link button'
+    is_unique: false
+    is_trigger: false
+    type: ui
+    icon: link
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      url:
+        type: str
+  - name: upload
+    display_name: 'Upload'
+    is_unique: false
+    is_trigger: false
+    type: ui
+    icon: upload
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      uploaded:
+        type: streamlit_uploadable
+  - name: download
+    display_name: 'Download'
+    is_unique: false
+    is_trigger: false
+    type: ui
+    icon: download
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      uploaded:
+        type: streamlit_downloadable
+  - name: time
+    display_name: 'Time input'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: clock
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      time:
+        type: time
+  - name: date
+    display_name: 'Date input'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: calendar-days
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      date:
+        type: date
+  - name: code_editor
+    display_name: 'Code editor'
+    is_unique: true
+    is_trigger: false
+    type: ui
+    icon: code
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      code:
+        type: str
+  - name: camera
+    display_name: 'Camera'
+    is_unique: true
+    is_trigger: true
+    type: ui
+    icon: camera
+    category: Streamlit
+    version: 0.2.0
+    outputs:
+      image:
+        type: uploadedfile
