@@ -794,7 +794,7 @@ bricks:
     display_name: 'Text'
     type: ui
     icon: font
-    category: UI - Streamlit
+    category: Streamlit
     version: 0.2.0
     inputs:
       text:
