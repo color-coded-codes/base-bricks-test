@@ -1153,3 +1153,25 @@ bricks:
     outputs:
       image:
         type: uploadedfile
+  - name: table
+    is_unique: false
+    is_trigger: false
+    display_name: Table
+    type: ui
+    icon: table
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      data:
+        type: streamlit_data
+  - name: json
+    is_unique: false
+    is_trigger: false
+    display_name: JSON
+    type: ui
+    icon: file-code
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      data:
+        type: streamlit_serializable
