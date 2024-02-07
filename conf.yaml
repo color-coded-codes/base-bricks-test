@@ -1173,5 +1173,5 @@ bricks:
     category: Streamlit
     version: 0.2.0
     inputs:
-      data:
+      body:
         type: streamlit_serializable
