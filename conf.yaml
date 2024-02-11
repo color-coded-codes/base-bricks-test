@@ -304,6 +304,15 @@ bricks:
     inputs:
       condition:
         type: bool
+  - name: if_any_condition
+    display_name: 'If Any'
+    type: control
+    icon: arrows-split-up-and-left
+    category: flow control
+    version: 1.0.0
+    inputs:
+      any:
+        type: any
   - name: for_loop
     display_name: 'For'
     type: control
