@@ -798,8 +798,6 @@ bricks:
           env: POSTGRES_PASSWORD_FILE
   # ui editor
   - name: text_placeholder
-    is_unique: false
-    is_trigger: false
     display_name: 'Text'
     type: ui
     icon: font
@@ -809,8 +807,6 @@ bricks:
       text:
         type: str
   - name: image
-    is_unique: false
-    is_trigger: false
     display_name: 'Image'
     type: ui
     icon: image
@@ -840,8 +836,6 @@ bricks:
         type: input
         max_characters: 150
   - name: video
-    is_unique: false
-    is_trigger: false
     display_name: Video
     type: ui
     icon: video
@@ -860,8 +854,6 @@ bricks:
           - video/ogg
         default: video/mp4
   - name: map
-    is_unique: false
-    is_trigger: false
     display_name: Map
     type: ui
     icon: map
@@ -877,8 +869,6 @@ bricks:
         max_characters: 50
   - name: number_input
     display_name: 'Number'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: hashtag
     category: Streamlit
@@ -887,9 +877,7 @@ bricks:
       number:
         type: number
   - name: text_input
-    display_name: 'Text'
-    is_unique: true
-    is_trigger: true
+    display_name: 'Text input'
     type: ui
     icon: font
     category: Streamlit
@@ -899,8 +887,6 @@ bricks:
         type: str
   - name: textarea_input
     display_name: 'Textarea'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: font
     category: Streamlit
@@ -910,8 +896,6 @@ bricks:
         type: str
   - name: select
     display_name: 'Select'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: hand-pointer
     category: Streamlit
@@ -921,8 +905,6 @@ bricks:
         type: str
   - name: multiselect
     display_name: 'Multiselect'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: hand-pointer
     category: Streamlit
@@ -932,8 +914,6 @@ bricks:
         type: str[]
   - name: button
     display_name: 'Button'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: square
     category: Streamlit
@@ -943,8 +923,6 @@ bricks:
         type: bool
   - name: radio
     display_name: 'Radio'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: circle-dot
     category: Streamlit
@@ -954,8 +932,6 @@ bricks:
         type: str
   - name: checkbox
     display_name: Checkbox
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: square-check
     category: Streamlit
@@ -965,8 +941,6 @@ bricks:
         type: bool
   - name: toggle
     display_name: Toggle
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: toggle-on
     category: Streamlit
@@ -975,8 +949,6 @@ bricks:
       toggled:
         type: bool
   - name: line_chart
-    is_unique: false
-    is_trigger: false
     display_name: Line Chart
     type: ui
     icon: chart-line
@@ -999,8 +971,6 @@ bricks:
         type: input
         max_characters: 50
   - name: area_chart
-    is_unique: false
-    is_trigger: false
     display_name: Area Chart
     type: ui
     icon: chart-area
@@ -1023,8 +993,6 @@ bricks:
         type: input
         max_characters: 50
   - name: bar_chart
-    is_unique: false
-    is_trigger: false
     display_name: Bar Chart
     type: ui
     icon: chart-simple
@@ -1047,8 +1015,6 @@ bricks:
         type: input
         max_characters: 50
   - name: scatter_chart
-    is_unique: false
-    is_trigger: false
     display_name: Scatter Chart
     type: ui
     icon: chart-gant
@@ -1076,8 +1042,6 @@ bricks:
         max_characters: 50
   - name: slider
     display_name: 'Slider'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: hashtag
     category: Streamlit
@@ -1087,8 +1051,6 @@ bricks:
         type: number
   - name: link_button
     display_name: 'Link button'
-    is_unique: false
-    is_trigger: false
     type: ui
     icon: link
     category: Streamlit
@@ -1098,8 +1060,6 @@ bricks:
         type: str
   - name: upload
     display_name: 'Upload'
-    is_unique: false
-    is_trigger: false
     type: ui
     icon: upload
     category: Streamlit
@@ -1109,8 +1069,6 @@ bricks:
         type: streamlit_uploadable
   - name: download
     display_name: 'Download'
-    is_unique: false
-    is_trigger: false
     type: ui
     icon: download
     category: Streamlit
@@ -1120,8 +1078,6 @@ bricks:
         type: streamlit_downloadable
   - name: time
     display_name: 'Time input'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: clock
     category: Streamlit
@@ -1131,8 +1087,6 @@ bricks:
         type: time
   - name: date
     display_name: 'Date input'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: calendar-days
     category: Streamlit
@@ -1142,7 +1096,6 @@ bricks:
         type: date
   - name: code_editor
     display_name: 'Code editor'
-    is_unique: true
     is_trigger: false
     type: ui
     icon: code
@@ -1153,8 +1106,6 @@ bricks:
         type: str
   - name: camera
     display_name: 'Camera'
-    is_unique: true
-    is_trigger: true
     type: ui
     icon: camera
     category: Streamlit
@@ -1163,8 +1114,6 @@ bricks:
       image:
         type: uploadedfile
   - name: table
-    is_unique: false
-    is_trigger: false
     display_name: Table
     type: ui
     icon: table
@@ -1174,8 +1123,6 @@ bricks:
       data:
         type: streamlit_data
   - name: json
-    is_unique: false
-    is_trigger: false
     display_name: JSON
     type: ui
     icon: file-code
