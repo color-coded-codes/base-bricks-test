@@ -817,6 +817,10 @@ bricks:
     inputs:
       image:
         type: streamlit_image
+      caption:
+        type: str
+    optional_inputs:
+      caption: caption
     options:
       - name: channels
         display_name: Channels
@@ -833,10 +837,6 @@ bricks:
           - JPEG
           - PNG
         default: auto
-      - name: caption
-        display_name: Caption
-        type: input
-        max_characters: 150
   - name: video
     display_name: Video
     type: ui
@@ -875,6 +875,14 @@ bricks:
     icon: hashtag
     category: Streamlit
     version: 0.2.0
+    inputs:
+      number:
+        type: number
+      is_disabled:
+        type: bool
+    optional_inputs:
+      number: value
+      is_disabled: isDisabled
     outputs:
       number:
         type: number
@@ -884,6 +892,14 @@ bricks:
     icon: font
     category: Streamlit
     version: 0.2.0
+    inputs:
+      text:
+        type: str
+      is_disabled:
+        type: bool
+    optional_inputs:
+      text: value
+      is_disabled: isDisabled
     outputs:
       text:
         type: str
@@ -893,6 +909,14 @@ bricks:
     icon: font
     category: Streamlit
     version: 0.2.0
+    inputs:
+      text:
+        type: str
+      is_disabled:
+        type: bool
+    optional_inputs:
+      text: value
+      is_disabled: isDisabled
     outputs:
       text:
         type: str
@@ -902,24 +926,51 @@ bricks:
     icon: hand-pointer
     category: Streamlit
     version: 0.2.0
+    inputs:
+      options:
+        type: iterable
+      index:
+        type: int
+      is_disabled:
+        type: bool
+    optional_inputs:
+      options: options
+      is_disabled: isDisabled
+      index: index
     outputs:
       option:
-        type: str
+        type: any
   - name: multiselect
     display_name: 'Multiselect'
     type: ui
     icon: hand-pointer
     category: Streamlit
     version: 0.2.0
+    inputs:
+      options:
+        type: iterable
+      default:
+        type: iterable
+      is_disabled:
+        type: bool
+    optional_inputs:
+      options: options
+      is_disabled: isDisabled
+      default: selected
     outputs:
       option:
-        type: str[]
+        type: list
   - name: button
     display_name: 'Button'
     type: ui
     icon: square
     category: Streamlit
     version: 0.2.0
+    inputs:
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
     outputs:
       clicked:
         type: bool
@@ -929,9 +980,20 @@ bricks:
     icon: circle-dot
     category: Streamlit
     version: 0.2.0
+    inputs:
+      options:
+        type: iterable
+      index:
+        type: int
+      is_disabled:
+        type: bool
+    optional_inputs:
+      options: options
+      is_disabled: isDisabled
+      index: index
     outputs:
       option:
-        type: str
+        type: any
   - name: checkbox
     display_name: Checkbox
     type: ui
