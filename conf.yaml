@@ -1233,7 +1233,7 @@ bricks:
     version: 0.2.0
     outputs:
       image:
-        type: uploadedfile
+        type: streamlit_uploadedfile
   - name: table
     display_name: Table
     type: ui
