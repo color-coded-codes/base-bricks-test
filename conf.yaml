@@ -1000,6 +1000,14 @@ bricks:
     icon: square-check
     category: Streamlit
     version: 0.2.0
+    inputs:
+      checked:
+        type: bool
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
+      checked: value
     outputs:
       checked:
         type: bool
@@ -1009,6 +1017,14 @@ bricks:
     icon: toggle-on
     category: Streamlit
     version: 0.2.0
+    inputs:
+      toggled:
+        type: bool
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
+      toggled: value
     outputs:
       toggled:
         type: bool
@@ -1110,6 +1126,14 @@ bricks:
     icon: hashtag
     category: Streamlit
     version: 0.2.0
+    inputs:
+      number:
+        type: number
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
+      number: value
     outputs:
       number:
         type: number
@@ -1128,6 +1152,11 @@ bricks:
     icon: upload
     category: Streamlit
     version: 0.2.0
+    inputs:
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
     outputs:
       uploaded:
         type: streamlit_uploadable
@@ -1137,15 +1166,27 @@ bricks:
     icon: download
     category: Streamlit
     version: 0.2.0
-    outputs:
-      uploaded:
+    inputs:
+      data:
         type: streamlit_downloadable
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
   - name: time
     display_name: 'Time input'
     type: ui
     icon: clock
     category: Streamlit
     version: 0.2.0
+    inputs:
+      time:
+        type: time
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
+      time: selectedTime
     outputs:
       time:
         type: time
@@ -1155,6 +1196,14 @@ bricks:
     icon: calendar-days
     category: Streamlit
     version: 0.2.0
+    inputs:
+      date:
+        type: date
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
+      date: dateValue
     outputs:
       date:
         type: date
@@ -1165,6 +1214,14 @@ bricks:
     icon: code
     category: Streamlit
     version: 0.2.0
+    inputs:
+      code:
+        type: str
+      is_disabled:
+        type: bool
+    optional_inputs:
+      is_disabled: isDisabled
+      code: code
     outputs:
       code:
         type: str
