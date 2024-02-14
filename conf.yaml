@@ -1169,10 +1169,39 @@ bricks:
     inputs:
       data:
         type: streamlit_downloadable
+      file_name:
+        type: str
       is_disabled:
         type: bool
     optional_inputs:
       is_disabled: isDisabled
+      file_name: fileName
+    options:
+      - name: mime
+        display_name: Mime Type
+        type: select
+        choices:
+          - text/plain
+          - text/html
+          - text/csv
+          - application/pdf
+          - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+          - application/msword
+          - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+          - application/vnd.ms-excel
+          - application/vnd.openxmlformats-officedocument.presentationml.presentation
+          - application/vnd.ms-powerpoint
+          - image/png
+          - image/jpeg
+          - image/gif
+          - application/json
+          - application/xml
+          - text/xml
+          - application/zip
+          - application/javascript
+          - text/css
+          - application/octet-stream
+        default: text/plain
   - name: time
     display_name: 'Time input'
     type: ui
