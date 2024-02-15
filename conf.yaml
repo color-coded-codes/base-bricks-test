@@ -1281,3 +1281,9 @@ bricks:
     inputs:
       body:
         type: streamlit_serializable
+  - name: hide_ui
+    display_name: 'Hide UI'
+    type: ui-control
+    icon: eye-slash
+    category: Streamlit
+    version: 1.0.0
