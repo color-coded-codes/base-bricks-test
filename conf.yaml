@@ -1287,3 +1287,31 @@ bricks:
     icon: eye-slash
     category: Streamlit
     version: 1.0.0
+  # session variables
+  - name: create_session_variable
+    display_name: 'New session variable'
+    type: svariable
+    icon: code
+    category: Streamlit
+    version: 1.0.0
+    inputs:
+      value:
+        type: any
+  - name: get_session_variable
+    display_name: 'Get session variable'
+    type: svariable
+    icon: code
+    category: Streamlit
+    version: 1.0.0
+    outputs:
+      value:
+        type: any
+  - name: set_session_variable
+    display_name: 'Set session variable'
+    type: svariable
+    icon: code
+    category: Streamlit
+    version: 1.0.0
+    inputs:
+      value:
+        type: any
