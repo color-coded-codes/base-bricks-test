@@ -1252,10 +1252,7 @@ bricks:
     inputs:
       code:
         type: str
-      is_disabled:
-        type: bool
     optional_inputs:
-      is_disabled: isDisabled
       code: code
     outputs:
       code:
