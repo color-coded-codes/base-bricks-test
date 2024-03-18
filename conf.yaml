@@ -869,6 +869,10 @@ bricks:
         display_name: Size attribute
         type: input
         max_characters: 50
+      - name: color
+        display_name: Color attribute
+        type: input
+        max_characters: 50
   - name: number_input
     display_name: 'Number'
     type: ui
