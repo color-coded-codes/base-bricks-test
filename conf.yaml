@@ -1257,6 +1257,16 @@ bricks:
     outputs:
       code:
         type: str
+  - name: code_display
+    display_name: 'Code display'
+    is_trigger: false
+    type: ui
+    icon: code
+    category: Streamlit
+    version: 0.2.0
+    inputs:
+      code:
+        type: str
   - name: camera
     display_name: 'Camera'
     type: ui
